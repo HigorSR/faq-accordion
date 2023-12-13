@@ -8,10 +8,10 @@ function ResponsiveImg() {
 
     useEffect(() => {
         if (process.browser) {
-            setIsSmallScreen(window.innerWidth < 1440);
+            setIsSmallScreen(window.innerWidth < 1280);
 
             const handleResize = () => {
-                setIsSmallScreen(window.innerWidth < 1440);
+                setIsSmallScreen(window.innerWidth < 1280);
             };
 
             window.addEventListener('resize', handleResize);
